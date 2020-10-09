@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-ms-appinsights",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Application Insights Cordova plugin forked and edited by Actemium Schweiz AG.",
   "cordova": {
     "id": "cordova-plugin-appinsights",
@@ -12,7 +12,7 @@
   },
   "engines":{
     "cordovaDependencies":{
-      "0.0.2":{
+      "0.0.3":{
         "cordova": ">=9.0.0",
         "cordova-common": ">=4.0.0"
       }

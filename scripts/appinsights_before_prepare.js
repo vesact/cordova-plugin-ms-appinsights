@@ -20,14 +20,16 @@ module.exports = function (ctx) {
     var projectConfigXml = new ConfigParser(path.join(ctx.opts.projectRoot, 'config.xml'));
     var instrKey = projectConfigXml.getGlobalPreference('instrumentation_key');
 
-    console.log("Replacing 'instrumentationKey' parameter in plugin");
-
     if (instrKey) {
         // replace instrumentation key stub with provided value
-        console.log("Replacing 'instrumentationKey' parameter in plugin");
+        console.log("cordova-plugin-ms-appinsights - Replacing 'instrumentationKey' parameter in plugin");
         shell.sed('-i',
             /instrumentationKey:\s"(.*?)"/g,
             'instrumentationKey: "' + instrKey + '"',
             pluginConfigFile);
+    }
+    else
+    {
+        console.log("cordova-plugin-ms-appinsights - /!\\ instrumentation_key not provided in config.xml /!\\");
     }
 };

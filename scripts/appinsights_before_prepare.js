@@ -3,11 +3,16 @@ Copyright (c) Microsoft Open Technologies, Inc.  All Rights Reserved.
 Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
 */
 
+/*
+    To comply with the Apache 2.0 Licence:
+    This file been modified by Actemium Schweiz AG after being forked from its original repo.
+*/
+
 /*jshint node: true*/
 
 module.exports = function (ctx) {
 
-    var ConfigParser = require('../configparser/ConfigParser');
+    const { ConfigParser } = require('cordova-common');
     var path = require('path');
     var shell = require('shelljs');
 

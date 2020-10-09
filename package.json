@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-ms-appinsights",
   "version": "0.0.2",
-  "description": "Application Insights Cordova plugin.",
+  "description": "Application Insights Cordova plugin forked and edited by Actemium Schweiz AG.",
   "cordova": {
     "id": "cordova-plugin-appinsights",
     "platforms": [
@@ -12,7 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MSOpenTech/cordova-plugin-appinsights.git"
+    "url": "git+https://github.com/vesact/cordova-plugin-ms-appinsights"
+  },
+  "dependencies": {
+    "cordova-common": "^4.0.2"
   },
   "keywords": [
     "microsoft",
@@ -24,10 +27,10 @@
     "cordova-ios",
     "cordova-windows"
   ],
-  "author": "MSOpenTech",
+  "author": "Actemium Schweiz AG",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/MSOpenTech/cordova-plugin-appinsights/issues"
+    "url": "https://github.com/vesact/cordova-plugin-ms-appinsights/pulls"
   },
-  "homepage": "https://github.com/MSOpenTech/cordova-plugin-appinsights#readme"
+  "homepage": "https://github.com/vesact/cordova-plugin-ms-appinsights"
 }

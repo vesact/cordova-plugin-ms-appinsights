@@ -7,9 +7,9 @@ Licensed under the Apache License, Version 2.0.  See License.txt in the project 
 
 module.exports = function (ctx) {
 
-    var ConfigParser = ctx.requireCordovaModule('../configparser/ConfigParser');
-    var path = ctx.requireCordovaModule('path');
-    var shell = ctx.requireCordovaModule('shelljs');
+    var ConfigParser = require('../configparser/ConfigParser');
+    var path = require('path');
+    var shell = require('shelljs');
 
     var pluginConfigFile = path.resolve(ctx.opts.plugin.dir, 'www', 'AppInsights.js');
     var projectConfigXml = new ConfigParser(path.join(ctx.opts.projectRoot, 'config.xml'));

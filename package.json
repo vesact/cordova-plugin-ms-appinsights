@@ -10,12 +10,17 @@
       "windows"
     ]
   },
+  "engines":{
+    "cordovaDependencies":{
+      "0.0.2":{
+        "cordova": ">=9.0.0",
+        "cordova-common": ">=4.0.0"
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vesact/cordova-plugin-ms-appinsights"
-  },
-  "dependencies": {
-    "cordova-common": "^4.0.2"
   },
   "keywords": [
     "microsoft",
